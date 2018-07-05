@@ -7,15 +7,16 @@ using UnityEngine.UI;
 public class score : MonoBehaviour {
 
 	public Text scoretext;
-	public Transform player;
+	float playerscore;
 
 	// Use this for initialization
 	void Start () {
-		
+		playerscore = 0.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		scoretext.text = "Score: " + (player.position.y*50).ToString("0");
+		playerscore = playerscore + (Time.deltaTime*100);
+		scoretext.text = "Score: " + Mathf.RoundToInt(playerscore);
 	}
 }
