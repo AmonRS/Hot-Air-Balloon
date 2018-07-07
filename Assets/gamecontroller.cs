@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class gamecontroller : MonoBehaviour {
 
-	public GameObject pickup;
+	public GameObject health;
+	public GameObject spike;
 	public Vector3 spawnValues;
 
 	void Start () {
-		StartCoroutine (SpawnWaves ());
+		StartCoroutine (SpawnHealth());
+		StartCoroutine (SpawnSpikes());
 	}
 	
 	void Update () {
 		
 	}
 
-	IEnumerator SpawnWaves () {
+	IEnumerator SpawnHealth () {
         while (true) {
-			yield return new WaitForSeconds (1f);   //wait time
+			yield return new WaitForSeconds (3f);   //wait time
 
 			Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-			Instantiate (pickup, spawnPosition, transform.rotation);
+			Instantiate (health, spawnPosition, transform.rotation);
+        }
+    }
+
+	IEnumerator SpawnSpikes () {
+        while (true) {
+			yield return new WaitForSeconds (0.7f);   //wait time
+
+			Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+			Instantiate (spike, spawnPosition, transform.rotation);
         }
     }
 }

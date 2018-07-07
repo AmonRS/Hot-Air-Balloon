@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - thing
   - balloon
-  - pickup
+  - health
+  - spike
   layers:
   - Default
   - TransparentFX

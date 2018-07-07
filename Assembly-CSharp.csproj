@@ -53,12 +53,11 @@
   <ItemGroup>
      <Compile Include="Assets\background\bgscroller.cs" />
      <Compile Include="Assets\balloon\balloon_player.cs" />
-     <Compile Include="Assets\Fuel\Decay.cs" />
      <Compile Include="Assets\gamecontroller.cs" />
+     <Compile Include="Assets\healthbar\Decay.cs" />
      <Compile Include="Assets\menu.cs" />
-     <Compile Include="Assets\pickup\pickup.cs" />
+     <Compile Include="Assets\pickups\pickup.cs" />
      <Compile Include="Assets\score.cs" />
-     <Compile Include="Assets\z\camerafollower.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/unity_p/hot_air_balloon/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
