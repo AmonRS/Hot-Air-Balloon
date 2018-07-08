@@ -150,7 +150,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4496091755476246, guid: bd48c117a5574f14486fecf27bd7af1e, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114785174691420620, guid: bd48c117a5574f14486fecf27bd7af1e,
+        type: 2}
+      propertyPath: speed
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd48c117a5574f14486fecf27bd7af1e, type: 2}
@@ -199,7 +204,7 @@ MeshCollider:
   m_GameObject: {fileID: 255473339}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -220,7 +225,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 21eb38b4f1f2b7543af22ee63591e0d9, type: 2}
+  - {fileID: 2100000, guid: 1fd9bc251077f954eb82a795dd984e49, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -353,7 +358,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347526448
 GameObject:
@@ -382,7 +387,7 @@ MeshCollider:
   m_GameObject: {fileID: 347526448}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -403,7 +408,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 21eb38b4f1f2b7543af22ee63591e0d9, type: 2}
+  - {fileID: 2100000, guid: 1fd9bc251077f954eb82a795dd984e49, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -437,8 +442,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 347526448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 14.39, z: 2.5390625}
-  m_LocalScale: {x: 20.084263, y: 13, z: 12.552651}
+  m_LocalPosition: {x: -0.05, y: 13.14, z: 2.5390625}
+  m_LocalScale: {x: 6.8, y: 11, z: 12.552651}
   m_Children:
   - {fileID: 255473340}
   m_Father: {fileID: 0}
@@ -456,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 2
-  tileSizeZ: 13
+  tileSizeZ: 11
 --- !u!1 &352965590
 GameObject:
   m_ObjectHideFlags: 0

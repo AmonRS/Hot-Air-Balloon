@@ -24,11 +24,10 @@ public class pickup : MonoBehaviour {
 
 		if (other.gameObject.name=="ballooon"){
 			if (gameObject.tag=="health") {
-				Debug.Log("--o-- " + gameObject.tag);
-				fuel.value=+30;
+				fuel.value = +30;
 			}
 			else if (gameObject.tag=="spike") {
-				fuel.value=fuel.value-5;
+				fuel.value = fuel.value + 5;
 			}
 			Destroy(gameObject);
 		}
